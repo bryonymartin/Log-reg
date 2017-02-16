@@ -1,0 +1,38 @@
+---
+title: "Instructions"
+author: "Bryony"
+date: "February 16, 2017"
+output: html_document
+---
+
+
+**Reproducible GLM example with Steph Locke**
+
+install packrat package (will require Rtools installation too)
+restart R Studio
+
+Option 1:
+Create project in R Studio
+Enable packrat
+Install caret package
+Create new respository on github
+Commit changges
+Use github bash to push changes: 
+ - push an existing repo
+
+Option 2:
+Create empty repo on github
+Create R project by cloning github repo
+enable packrat
+install caret
+commit changes
+pus changes
+
+Disaster workaround:
+New RStudio instance
+New project from source control
+use: https://github.com/stephlocke/ReproducibleGLM-step 1
+ 
+ 
+
+
