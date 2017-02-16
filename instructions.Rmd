@@ -6,7 +6,10 @@ output: html_document
 ---
 
 
-**Reproducible GLM example with Steph Locke**
+# Reproducible GLM example with Steph Locke
+
+
+## Setting up
 
 install packrat package (will require Rtools installation too)
 restart R Studio
@@ -28,11 +31,28 @@ install caret
 commit changes
 pus changes
 
-Disaster workaround:
+Disaster workaround (here's one I made earlier):
 New RStudio instance
 New project from source control
-use: https://github.com/stephlocke/ReproducibleGLM-step 1
- 
- 
+Fork example from stephlocke/ReproducibleGLM-step1
+Clone to new RStudio project
+
+
+## Getting the data
+get_data.R script file:
+
+__start of file__
+
+### ---- makedb
+library(DBI)
+library(RSQLite)
+titanicdb<-dbConnect(SQLite(),dbname="data-raw/titanic.sqlite")
+
+### ---- writeTitanic
+library(PASWR)
+dbWriteTable(titanicdb, "titanic", titanic3, overwrite=TRUE)
+
+__end of file__
+
 
 
